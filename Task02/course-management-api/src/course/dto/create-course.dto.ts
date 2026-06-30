@@ -11,23 +11,23 @@ import {
 export class CreateCourseDto {
   @IsString()
   @IsNotEmpty()
-  name!: string;
+  name: string;
 
   @IsString()
   @IsNotEmpty()
-  code!: string;
+  code: string;
 
   @IsString()
   @IsNotEmpty()
-  instructor!: string;
+  instructor: string;
 
   @Type(() => Number)
   @IsNumber()
   @Min(1)
   @Max(6)
-  credits!: number;
+  credits: number;
 
   @IsOptional()
   @IsString()
-  description?: string;
+  description: string;
 }
